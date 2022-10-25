@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -9,5 +11,12 @@ public class Main {
         System.out.println("Номер документа: " + documentNumber);
 //        - Вывести на экран в одну строку два первых блока по 4 цифры.
         document.getFirstFourNumbers();
+//       - Вывести на экран номер документа, но блоки из трех букв заменить
+//       на *** (каждая буква заменятся на *)
+        document.getStarLetter();
+        // - Вывести буквы в нижнем регистре
+        document.getLetterBottomRegister();
     }
+
+
 }
