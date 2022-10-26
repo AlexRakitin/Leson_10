@@ -34,19 +34,20 @@ public class Document {
     public void getLetterBottomRegister() {
         char[] strMassiveFive = massiveFive.toCharArray();
         char letter;
+        String twoLetter;
+        StringBuilder twoFindLetter = new StringBuilder();
         for (int i = 0; i < strMassiveFive.length; i++) {
             letter = strMassiveFive[i];
             boolean letterTrueFalse = Character.isDigit(letter);
             if (letterTrueFalse) {
             } else {
-                System.out.print(strMassiveFive[i]);
+                twoFindLetter.append(strMassiveFive[i]);
             }
         }
-//        String fiveLetters = Character.toString(letter);
-
+        System.out.println("Искомое: " + twoFindLetter);
         System.out.println();
         StringBuilder letterBottomRegister = new StringBuilder();
-        letterBottomRegister.append(massiveTwo + "/").append(massiveFour + "/");
+        letterBottomRegister.append(massiveTwo + "/").append(massiveFour + "/").append(twoFindLetter);
         System.out.println("Буквы в нижнем регистре: " + letterBottomRegister);
     }
 }
