@@ -1,3 +1,5 @@
+package lesson_10;
+
 public class Main {
     private static final String DOC_NUMBER = "Номер документа: ";
 

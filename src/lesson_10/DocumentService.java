@@ -1,4 +1,4 @@
-import java.util.Locale;
+package lesson_10;
 
 public class DocumentService {
     private static final String LOWER_CASE = "lower_case";
