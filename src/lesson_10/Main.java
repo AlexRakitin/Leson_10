@@ -20,7 +20,12 @@ public class Main {
         // - Вывести буквы в нижнем регистре yyy/yyy/y/y
         DocumentService.getLetterToLowerCase(document);
         DocumentService.getLetterToUpperCase(document);
-//
+//- Проверить содержит ли номер документа последовательность abc ABC
+        DocumentService.checkSequence(document);
+//       -Проверить начинается ли номер документа с последовательности 555
+    DocumentService.checkFirstLetter(document);
+//    -Проверить заканчивается ли номер документа на последовательность 1a2b
+        DocumentService.checkLatestLetter(document);
     }
 
 

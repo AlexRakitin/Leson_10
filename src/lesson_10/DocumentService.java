@@ -55,6 +55,7 @@ public class DocumentService {
         StringBuilder stringBuilder = transformToCase(docNumber);
         printData("Буквы в нижнем регистре: " + stringBuilder);
     }
+
     public static void getLetterToUpperCase(Document document) {
         String docNumber = document.getDocNumber();
         docNumber = transform(docNumber, UPPER_CASE);
@@ -62,6 +63,7 @@ public class DocumentService {
         StringBuilder stringBuilder = transformToCase(docNumber);
         printData("Буквы в верхнем регистре: " + stringBuilder);
     }
+
     private static StringBuilder transformToCase(String docNumber) {
         String[] splitDocNumber = docNumber.split("-");
         StringBuilder stringBuilder = new StringBuilder();
@@ -102,6 +104,33 @@ public class DocumentService {
         return stringBuilder;
     }
 
+    public static void checkSequence(Document document) {
+        String docNumber = document.getDocNumber();
+        if (docNumber.contains("abc")) {
+            printData("Есть в наличии последовательность: abc!");
+        } else if (docNumber.contains("ABC")) {
+            printData("Есть в наличии последовательность: ABC!");
+        } else {
+            printData("Последовательности abc/ABC нету в наличии!");
+        }
+
+    }
+    public static void checkFirstLetter (Document document){
+        String docNumber = document.getDocNumber();
+        if (docNumber.startsWith("555")) {
+            printData("Есть в начале!");
+        } else {
+            printData("Нету в начале!");
+        }
+    }
+    public static void checkLatestLetter (Document document){
+        String docNumber = document.getDocNumber();
+        if (docNumber.endsWith("1a2b")) {
+            printData("Есть в конце!");
+        } else {
+            printData("Нету в конце!");
+        }
+    }
 
 }
 
