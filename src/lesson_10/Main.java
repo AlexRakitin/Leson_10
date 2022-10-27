@@ -26,6 +26,7 @@ public class Main {
     DocumentService.checkFirstLetter(document);
 //    -Проверить заканчивается ли номер документа на последовательность 1a2b
         DocumentService.checkLatestLetter(document);
+        Task3.doubleLetter();
     }
 
 
